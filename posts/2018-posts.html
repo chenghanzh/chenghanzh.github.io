@@ -11,11 +11,14 @@ classification: blog
 
 <ul class="list-posts">
     {% for post in site.posts %}
+      {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+      {% if this_year=="2018" %}
         <li class="post-teaser">
             <a href="{{ post.url | prepend: site.baseurl }}">
                 <span class="post-teaser__title">{{ post.title }}</span>
                 <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
             </a>
         </li>
+      {% endif %}
     {% endfor %}
 </ul>

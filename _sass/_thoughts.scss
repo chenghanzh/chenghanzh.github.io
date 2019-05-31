@@ -1,0 +1,28 @@
+.module {
+    margin: 1.5em;
+    padding: 1.5em;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+}
+
+.thoughts-page-title {
+    margin-top:50px;
+    margin-bottom:50px;
+    text-align: center;
+}
+
+.thoughts-page-title__text {
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.thoughts-page-title__subtitle {
+    font-weight: 400;
+    font-size: 22px;
+    color: $cloudy;
+}

@@ -1,10 +1,24 @@
 <header class="header">
     <div class="navigation">
         <a href="/" class="logo">{{ site.title }}</a>
-
         <ul class="menu">
+          {% if page.classification == "about" %}
+            <li class="menu__entry__on"><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+          {% else %}
             <li class="menu__entry"><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+          {% endif %}
+
+          {% if page.classification == "blog" %}
+            <li class="menu__entry__on"><a href="{{ '/' | prepend: site.baseurl }}">Blog</a></li>
+          {% else %}
             <li class="menu__entry"><a href="{{ '/' | prepend: site.baseurl }}">Blog</a></li>
+          {% endif %}
+
+          {% if page.classification == "thoughts" %}
+            <li class="menu__entry__on"><a href="{{ '/thoughts/thoughts' | prepend: site.baseurl }}">Thoughts</a></li>
+          {% else %}
+            <li class="menu__entry"><a href="{{ '/thoughts/thoughts' | prepend: site.baseurl }}">Thoughts</a></li>
+          {% endif %}
         </ul>
     </div>
 

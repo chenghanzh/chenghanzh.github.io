@@ -1,0 +1,29 @@
+---
+layout: thoughtsPage
+title: Thoughts
+subtitle: Popped up ideas
+sitemap:
+  priority: 0.9
+classification: thoughts
+---
+
+<h1 class="thoughts-page-title">
+    <div class="page-title__text post-title__text">{{ page.title }}</div>
+    <div class="page-title__subtitle post-title__subtitle">{{ page.subtitle }}</div>
+</h1>
+
+<ul class="list-posts">
+    {% for thought in site.thoughts %}
+      {% capture this_year %}{{ thought.date | date: "%Y" }}{% endcapture %}
+      {% if this_year=="2019" %}
+        <article class="module">
+          <h2>
+            <time>{{ thought.date| date: "%m/%d/%Y" }}</time>
+          </h2>
+          <p>
+          {{ thought.content | strip_html }}
+          </p>
+        </article>
+      {%endif %}
+    {% endfor %}
+</ul>

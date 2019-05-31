@@ -64,11 +64,14 @@ strong {
 
 /* =Header */
 .wrapper {
-    max-width: 800px;
-    margin: 100px auto;
+  max-width: 800px;
+  margin: 100px auto;
 }
 
 .header {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
     overflow: hidden;
 }
 
@@ -105,6 +108,20 @@ strong {
     font-weight: 400;
 }
 
+.menu__entry__on {
+    display: inline-block;
+    margin-right: 35px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.menu__entry__on a {
+    font-weight: 400;
+    font-weight: bold;
+}
+
 .social-links {
     float:right;
     font-size: 24px;
@@ -119,7 +136,7 @@ strong {
 
 /* =Titles */
 .page-title {
-    margin-top:100px;
+    margin-top:50px;
     margin-bottom:125px;
     text-align: center;
 }
