@@ -1,34 +1,7 @@
 <div class="sidebarWrapper">
   <div class="sidebar">
     <ul class="nav sidenav">
-      {% for thought in site.thoughts %}
-        <li>hello{{thought.date}}</li>
-        <li>hello{{thought.previous.date}}</li>
-        {% capture this_year %}{{ thought.date | date: "%Y" }}{% endcapture %}
-        {% capture this_month %}{{ thought.date | date: "%B" }}{% endcapture %}
-        {% capture next_year %}{{ thought.previous.date | date: "%Y" }}{% endcapture %}
-        {% capture next_month %}{{ thought.previous.date | date: "%B" }}{% endcapture %}
-        {% if forloop.first %}
-          <li><a href="/posts/{{this_year}}-thought">{{this_year}}</a>
-            <ul class="nav">
-              <li><a href="#month_{{this_year}}_{{this_month}}">{{this_month}}</a></li>
-        {% endif %}
-        {% if forloop.last %}
-            </ul>
-          </li>
-        {% else %}
-          {% if this_year != next_year %}
-              </ul>
-            <li><a href="/posts/{{next_year}}-thoughts">{{next_year}}</a>
-            <ul class="nav">
-              <li><a href="#month_{{next_year}}_{{next_month}}">{{next_month}}</a></li>
-          {% else %}
-            {% if this_month != next_month %}
-              <li><a href="#month_{{next_year}}_{{next_month}}">{{next_month}}</a></li>
-            {% endif %}
-          {% endif %}
-        {% endif %}
-      {% endfor %}
+      <li><a href="/thoughts/2019-thoughts">2019</a>
     </ul>
   </div>
 </div>
