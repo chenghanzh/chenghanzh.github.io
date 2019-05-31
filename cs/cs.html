@@ -1,0 +1,20 @@
+---
+layout: sidebarPage
+title: Blog
+subtitle: Hitchhiker's guid to web development
+sitemap:
+  priority: 0.9
+categories: [cs]
+---
+
+{% include sidebarPage/title.html %}
+  <ul class="list-posts">
+    {% for post in site.posts %}
+        <li class="post-teaser">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+                <span class="post-teaser__title">{{ post.title }}</span>
+                <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
+            </a>
+        </li>
+    {% endfor %}
+  </ul>

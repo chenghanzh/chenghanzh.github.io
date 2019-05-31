@@ -11,10 +11,21 @@
         {% include header.html %}
         <div class="sidebarContentWrapper">
           <div class="sidebarContent">
+            {% include post/title.html %}
             {{ content }}
           </div>
         </div>
-        {% include sidebarPage/lefttreeCS.html %}
+
+        <div class="sidebarWrapper">
+          <div class="sidebar">
+            <ul class="nav sidenav">
+              {% for iden in page.identifier  %}
+                  <li><a href="#{{iden}}">{{iden}}</a>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+
 
         {% include externals/scripting.html %}
         {% include externals/google_analytics.html %}

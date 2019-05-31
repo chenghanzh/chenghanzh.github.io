@@ -3,7 +3,7 @@ layout: post
 title:  “”
 subtitle: "Feel home!"
 date:   2019-05-29 23:34:01
-categories: [productivity, tool]
-classification: thoughts
+categories: [thoughts]
+classification: [thoughts-serious]
 ---
 “当自己的梦想实现的时候，就会变成别人的梦想。”

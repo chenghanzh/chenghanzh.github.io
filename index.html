@@ -1,21 +1,14 @@
 ---
-layout: sidebarPage
-title: Blog
-subtitle: Hitchhiker's guid to web development
-sitemap:
-  priority: 0.9
-classification: blog
+layout: page
+title: About
+subtitle: Just who the hell you think I am?
+categories: About
 ---
+<p>
+This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
 
-{% include sidebarPage/title.html %}
+You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
 
-<ul class="list-posts">
-    {% for post in site.posts %}
-        <li class="post-teaser">
-            <a href="{{ post.url | prepend: site.baseurl }}">
-                <span class="post-teaser__title">{{ post.title }}</span>
-                <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
-            </a>
-        </li>
-    {% endfor %}
-</ul>
+You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+
+</p>

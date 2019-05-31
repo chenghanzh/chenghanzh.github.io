@@ -1,24 +1,31 @@
 <header class="header">
     <div class="navigation">
         <a href="/" class="logo">{{ site.title }}</a>
+
         <ul class="menu">
-          {% if page.classification == "about" %}
-            <li class="menu__entry__on"><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
-          {% else %}
-            <li class="menu__entry"><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
-          {% endif %}
+          {% for level1 in site.data.navigation %}
+            {%if page.categories[0] == level1.title %}
+              <li class="menu__entry__on"><a href="{{level1.url}}">{{level1.name}}</a></li>
+            {% else %}
+              <li class="menu__entry"><a href="{{level1.url}}">{{level1.name}}</a></li>
+            {% endif %}
+          {% endfor %}
 
-          {% if page.classification == "blog" %}
-            <li class="menu__entry__on"><a href="{{ '/' | prepend: site.baseurl }}">Blog</a></li>
-          {% else %}
-            <li class="menu__entry"><a href="{{ '/' | prepend: site.baseurl }}">Blog</a></li>
-          {% endif %}
-
-          {% if page.classification == "thoughts" %}
-            <li class="menu__entry__on"><a href="{{ '/thoughts/thoughts' | prepend: site.baseurl }}">Thoughts</a></li>
-          {% else %}
-            <li class="menu__entry"><a href="{{ '/thoughts/thoughts' | prepend: site.baseurl }}">Thoughts</a></li>
-          {% endif %}
+          <ul class="subMenu">
+            {% for level1 in site.data.navigation %}
+              {%if page.categories[0] == level1.title %}
+                {% for level2 in level1.subitems %}
+                  {% if page.classification == nil %}
+                    <li class="subMenu__entry"><a href="{{level2.url}}">{{level2.name}}</a></li>
+                  {% elsif page.classification[0] == level2.item %}
+                    <li class="subMenu__entry__on"><a href="{{level2.url}}">{{level2.name}}</a></li>
+                  {% else %}
+                    <li class="subMenu__entry"><a href="{{level2.url}}">{{level2.name}}</a></li>
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+          </ul>
         </ul>
     </div>
 

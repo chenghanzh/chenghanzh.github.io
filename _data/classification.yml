@@ -1,8 +1,19 @@
-- slug: about
-  name: About
+- slug: cs-algorithm
+  name: Algorithm
+  category: cs
 
-- slug: blog
-  name: Blog
+- slug: cs-ml
+  name: Machine Learning
+  category: cs
 
-- slug: thoughts
-  name: Thoughts
+- slug: thoughts-all
+  name: All
+  category: thoughts
+
+- slug: thoughts-serious
+  name: Serious
+  category: thoughts
+
+- slug: thoughts-random
+  name: Random
+  category: thoughts

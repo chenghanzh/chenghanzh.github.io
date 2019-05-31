@@ -1,0 +1,34 @@
+- title: cs
+  name: CS
+  url: /cs/cs.html
+  subitems:
+    - item: cs-algorithm
+      name: Algorithm
+      url: /cs/algorithm/cs-algorithm.html
+      subsubitems:
+        - page: cs-algorithm-backtrack
+          url: /cs/algorithm/cs-algorithm-backtrack.html
+    - item: cs-ml
+      name: Machine Learning
+      url: /cs/cs-ml.html
+  years:
+    - item: cs-2019
+      name: 2019
+
+
+- title: thoughts
+  name: Thoughts
+  url: /thoughts/thoughts.html
+  subitems:
+    - item: thoughts-all
+      name: All
+    - item: thoughts-serious
+      name: Serious
+      url: /thoughts/thoughts-serious.html
+    - item: thoughts-random
+      name: Random
+      url: /thoughts/thoughts-random.html
+  years:
+    - item: thoughts-2019
+      name: 2019
+      url: /thoughts/2019-thoughts.html

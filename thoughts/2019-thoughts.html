@@ -4,7 +4,8 @@ title: Thoughts
 subtitle: Popped up ideas
 sitemap:
   priority: 0.9
-classification: thoughts
+categories: [thoughts]
+classification: [thoughts-all]
 ---
 
 <h1 class="thoughts-page-title">
@@ -13,9 +14,9 @@ classification: thoughts
 </h1>
 
 <ul class="list-posts">
-    {% for thought in site.thoughts reversed%}
+    {% for thought in site.thoughts reversed %}
       {% capture this_year %}{{ thought.date | date: "%Y" }}{% endcapture %}
-      {% if this_year=="2019" %}
+      {% if this_year == "2019" %}
         <article class="module">
           <h2>
             <time>{{ thought.date| date: "%m/%d/%Y" }}</time>

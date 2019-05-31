@@ -1,0 +1,25 @@
+---
+layout: csPage
+title: Algorithms
+subtitle: The beginning of the journey
+sitemap:
+  priority: 0.9
+sidebar: lefttreeCS.html
+categories: [cs]
+classification: [cs-algorithm]
+---
+
+{% include sidebarPage/title.html %}
+
+  <ul class="list-posts">
+    {% for post in site.posts %}
+        {% if post.classification[0] == "cs-algorithm" %}
+          <li class="post-teaser">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+                <span class="post-teaser__title">{{ post.title }}</span>
+                <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
+            </a>
+          </li>
+        {% endif %}
+    {% endfor %}
+  </ul>
