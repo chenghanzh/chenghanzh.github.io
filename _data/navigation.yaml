@@ -2,15 +2,20 @@
   name: CS
   url: /cs/cs.html
   subitems:
-    - item: cs-algorithm
+    - title: cs-algorithm
       name: Algorithm
       url: /cs/algorithm/cs-algorithm.html
       subsubitems:
-        - page: cs-algorithm-backtrack
+        - title: cs-algorithm-backtrack
+          name: Backtracking Algorithm
           url: /cs/algorithm/cs-algorithm-backtrack.html
-    - item: cs-ml
+    - title: cs-ml
       name: Machine Learning
-      url: /cs/cs-ml.html
+      url: /cs/ml/cs-ml.html
+      subsubitems:
+        - title: cs-ml-cs229
+          name: Stanford cs229 Maching Learning
+          url: /cs/ml/cs-ml-cs229.html
   years:
     - item: cs-2019
       name: 2019
@@ -20,15 +25,15 @@
   name: Thoughts
   url: /thoughts/thoughts.html
   subitems:
-    - item: thoughts-all
+    - title: thoughts-all
       name: All
-    - item: thoughts-serious
+    - title: thoughts-serious
       name: Serious
       url: /thoughts/thoughts-serious.html
-    - item: thoughts-random
+    - title: thoughts-random
       name: Random
       url: /thoughts/thoughts-random.html
   years:
-    - item: thoughts-2019
+    - title: thoughts-2019
       name: 2019
       url: /thoughts/2019-thoughts.html

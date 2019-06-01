@@ -4,16 +4,13 @@ title: Algorithms
 subtitle: The beginning of the journey
 sitemap:
   priority: 0.9
-sidebar: lefttreeCS.html
 categories: [cs]
 classification: [cs-ml]
 ---
 
-{% include sidebarPage/title.html %}
-
   <ul class="list-posts">
     {% for post in site.posts %}
-        {% if post.classification[0] == "cs-ml" %}
+        {% if post.classification[0] == "cs-ml" and post.tag[0] == "cs-ml-cs229" %}
           <li class="post-teaser">
             <a href="{{ post.url | prepend: site.baseurl }}">
                 <span class="post-teaser__title">{{ post.title }}</span>

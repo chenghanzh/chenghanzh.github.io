@@ -5,6 +5,7 @@ subtitle: "Introduction"
 date:   2019-05-31 16:21:45
 categories: [cs]
 classification: [cs-algorithm]
+tag: [cs-algorithm-backtrack]
 identifier:
   - Beginning
   - Pseudocode

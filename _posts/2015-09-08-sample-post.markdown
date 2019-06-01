@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: csPost
 title:  "Sample post from Daktilo"
 subtitle: "What you can do with it!"
 date:   2014-08-19 23:56:45
 categories: [cs]
 classification: [cs-ml]
+tag: [cs-ml-cs229]
 ---
 
 Just a sample post to show some of the *typography* elements supported from

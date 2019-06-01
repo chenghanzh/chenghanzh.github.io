@@ -69,13 +69,14 @@ strong {
 }
 
 .header {
-    margin-left: 10%;
+    margin-left: 5%;
     margin-right: 12%;
     margin-top: 30px;
     overflow: hidden;
 }
 
 .navigation {
+    width: 90%;
     float:left;
 }
 
@@ -92,12 +93,12 @@ strong {
     color: $cloudy;
     font-size: 27px;
     margin-bottom: 20px;
-    margin-left: 270px;
+    //margin-left: 270px;
     margin-top: 10px;
     padding: 0px;
+    padding-left: 25%;
     padding-top: 15px;
     list-style-type: none;
-
 }
 
 .menu__entry {
@@ -288,12 +289,13 @@ strong {
 
 .about__devider {
     font-size: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     letter-spacing: 9.09px;
 }
 
 .about__text {
     font-size: 18px;
+    margin-bottom: 50px;
 }
 
 #disqus_thread {

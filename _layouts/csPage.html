@@ -10,28 +10,25 @@
     <body>
         {% include header.html %}
         <div class="sidebarContentWrapper">
-          <div class="sidebarContent">
-            {{ content }}
-          </div>
-        </div>
-
-        {% if page.sidebar %}
-          {% include sidebarPage/{{page.sidebar}} %}
-        {% else %}
-          {% include sidebarPage/lefttreeCS.html %}
-        {% endif %}
-
-        <div class="sidebarWrapper">
-          <div class="sidebar">
+          <div class="sidebar sidebarPage">
             <ul class="nav sidenav">
               {% for level1 in site.data.navigation %}
-                {%if page.categories[0] == level1.title %}
-                  <li class="menu__entry__on"><a href="{{level1.url}}">{{level1.name}}</a></li>
-                {% else %}
-                  <li class="menu__entry"><a href="{{level1.url}}">{{level1.name}}</a></li>
+                {% if page.categories[0] == level1.title %}
+                  {% for level2 in level1.subitems %}
+                    {% if page.classification[0] == level2.title %}
+                      {% for level3 in level2.subsubitems %}
+                        <li><a href="{{level3.url}}">{{level3.name}}</a></li>
+                      {% endfor %}
+                    {% endif %}
+                  {% endfor %}
                 {% endif %}
               {% endfor %}
             </ul>
+          </div>
+
+          <div class="sidebarContent sidebarContentPage">
+            {% include sidebarPage/title.html %}
+            {{ content }}
           </div>
         </div>
 

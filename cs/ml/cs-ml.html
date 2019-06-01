@@ -5,12 +5,12 @@ subtitle: The beginning of the journey
 sitemap:
   priority: 0.9
 categories: [cs]
-classification: [cs-algorithm]
+classification: [cs-ml]
 ---
 
   <ul class="list-posts">
     {% for post in site.posts %}
-        {% if post.classification[0] == "cs-algorithm" %}
+        {% if post.classification[0] == "cs-ml" %}
           <li class="post-teaser">
             <a href="{{ post.url | prepend: site.baseurl }}">
                 <span class="post-teaser__title">{{ post.title }}</span>

@@ -9,12 +9,19 @@
 
     <body>
         {% include header.html %}
+
         <div class="sidebarContentWrapper">
-          <div class="sidebarContent">
+          <div class="sidebar sidebarThoughts">
+            <ul class="nav sidenav">
+              <li><a href="/thoughts/2019-thoughts">2019</a>
+            </ul>
+          </div>
+
+          <div class="sidebarContent sidebarContentThoughts">
+            {% include sidebarPage/title.html %}
             {{ content }}
           </div>
         </div>
-        {% include sidebarPage/lefttreeThoughts.html %}
 
         {% include externals/scripting.html %}
         {% include externals/google_analytics.html %}

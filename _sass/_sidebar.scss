@@ -1,7 +1,6 @@
 .sidebarContentWrapper {
-    width: 80%;
-    // margin-right: 200px;
-    float: right;
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 .sidebarContent{
@@ -9,43 +8,52 @@
   padding-right: 10%;
 }
 
-.sidebar-title {
-    margin-top: 40px;
-    margin-bottom: 110px;
+.sidebarContentPage{
+  width: 70%;
 }
 
-.sidebar-title__text {
-    font-size: 40px;
+.sidebarContentPost{
+  width: 80%;
 }
 
-.sidebar-title__subtitle {
-    font-size: 20px;
+.sidebarContentThoughts{
+  width: 90%;
 }
 
-.sidebarWrapper {
+.sidebar{
+  top: 160px;
+  position: relative;
+}
+.sidebarPage {
+  width: 30%;
+  padding-left: 2%;
+}
+
+.sidebarPost {
   width: 20%;
-  padding-top: 100px;
-  float: left;
+  padding-left: 5%;
 }
-.sidebar {
-  padding-left: 35%;
+
+.sidebarThoughts {
+  width: 10%;
+  padding-left: 5%;
 }
-.sidebar.affix {
-  position: static;
-}
+
 /* First level of nav */
 .sidenav {
   list-style-type: none;
   font-size: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
-  padding-top: 10px;
+  padding-top: 10%;
   padding-bottom: 10px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   background-color: #f7f7f7;
   border-radius: 5px;
-  position: fixed;
 }
+
+
+
 /* All levels of nav */
 .sidebar .nav > li > a {
   display: block;
@@ -56,25 +64,37 @@
 .sidebar .nav > li > a:focus {
   text-decoration: none;
   background-color: #e8ebee;
-  border-right: 1px solid #d8dde2;
 }
-.sidebar .nav > .active > a,
-.sidebar .nav > .active:hover > a,
-.sidebar .nav > .active:focus > a {
-  font-weight: bold;
-  color: #1d365d;
-  background-color: transparent;
-  border-right: 1px solid #1d365d;
+
+@media (min-height: 300px) {
+  .sidenav {
+    position: sticky;
+    top: 0px;
+  }
 }
-.sidebar .nav .nav {
-  display: none;
-  margin-bottom: 8px;
+
+nav {
+  white-space: nowrap;
+  background: #37474F;
 }
-.sidebar .nav .nav > li > a {
-  padding: 3px 30px;
-  font-size: 90%;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.sidebar .glyphicon {
-  font-size: 12px;
-  margin-left: 10px;
+/* Only stick if you can fit */
+@media (min-height: 300px) {
+  nav ul {
+    position: sticky;
+    top: 0px;
+  }
+}
+nav ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+}
+nav ul li a.current {
+  background: black;
 }

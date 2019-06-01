@@ -13,7 +13,7 @@ classification: [cs-algorithm]
 
   <ul class="list-posts">
     {% for post in site.posts %}
-        {% if post.classification[0] == "cs-algorithm" %}
+        {% if post.classification[0] == "cs-algorithm" and post.tag[0] == "cs-algorithm-backtrack" %}
           <li class="post-teaser">
             <a href="{{ post.url | prepend: site.baseurl }}">
                 <span class="post-teaser__title">{{ post.title }}</span>

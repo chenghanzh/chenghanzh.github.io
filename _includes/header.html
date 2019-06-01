@@ -17,7 +17,7 @@
                 {% for level2 in level1.subitems %}
                   {% if page.classification == nil %}
                     <li class="subMenu__entry"><a href="{{level2.url}}">{{level2.name}}</a></li>
-                  {% elsif page.classification[0] == level2.item %}
+                  {% elsif page.classification[0] == level2.title %}
                     <li class="subMenu__entry__on"><a href="{{level2.url}}">{{level2.name}}</a></li>
                   {% else %}
                     <li class="subMenu__entry"><a href="{{level2.url}}">{{level2.name}}</a></li>

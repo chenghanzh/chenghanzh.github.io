@@ -1,0 +1,9 @@
+- slug: cs-algorithm-backtrack
+  name: Backtracking Algorithm
+  classification: cs-algorithm
+  category: cs
+
+- slug: cs-ml-cs229
+  name: Stanford cs229 Machine Learning
+  classification: cs-ml
+  category: cs
