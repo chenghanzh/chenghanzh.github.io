@@ -1,0 +1,104 @@
+/*
+Template Name: Mediumish
+Copyright: Sal, WowThemes.net, https://www.wowthemes.net
+License: https://www.wowthemes.net/freebies-license/
+*/
+.vertical-row{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  padding-top: 10px;
+}
+
+.horizontal-row{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  padding-top: 10px;
+}
+
+.vertical-card{
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+  font-weight: 400;
+  font-size: 15.2px;
+  background-color: white;
+}
+
+.horizontal-card{
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+  font-weight: 400;
+  font-size: 15.2px;
+  background-color: white;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+}
+
+.vertical-card-image {
+    max-height: 300px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.horizontal-card-image {
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.card-title{
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+
+.card-title-link{
+  color: #343a40!important;
+}
+
+.card-body{
+  padding: 20px;
+  text-align: left;
+}
+
+.card-text{
+  color: $cloudy;
+  font-size: 16px;
+}
+
+.rating-text{
+  color: $cloudy;
+  font-size: 20px;
+  position: relative;
+  bottom: 4px;
+}
+
+.rating{
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+.rating-star{
+  margin-top: 1px;
+}
+
+.wrapfooter {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.music-frame{
+  align-items: center;
+  margin-bottom: 30px;
+}
+.music-frame-inner{
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}

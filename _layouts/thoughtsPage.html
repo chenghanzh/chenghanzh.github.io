@@ -13,7 +13,21 @@
         <div class="sidebarContentWrapper">
           <div class="sidebar sidebarThoughts">
             <ul class="nav sidenav">
-              <li><a href="/thoughts/2019-thoughts">2019</a>
+              {% for thought in site.thoughts reversed  %}
+                {% capture this_year %}{{ thought.date | date: "%Y" }}{% endcapture %}
+                {% capture next_year %}{{ thought.previous.date | date: "%Y" }}{% endcapture %}
+                {% if forloop.first %}
+                  <li><a href="/thoughts/{{this_year}}-thoughts">{{this_year}}</a>
+                {% endif %}
+                {% if forloop.last %}
+                    </ul>
+                  </li>
+                {% else %}
+                  {% if this_year != next_year %}
+                    <li><a href="/thoughs/{{next_year}}-thoughts">{{next_year}}</a>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
             </ul>
           </div>
 

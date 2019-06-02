@@ -17,3 +17,15 @@
 - slug: thoughts-random
   name: Random
   category: thoughts
+
+- slug: life-food
+  name: Food
+  category: life
+
+- slug: life-painting
+  name: Painting
+  category: life
+
+- slug: life-music
+  name: Music
+  category: life

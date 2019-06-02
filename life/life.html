@@ -1,0 +1,18 @@
+---
+layout: lifePage
+title: Life
+subtitle: 精致要付出代价，贪玩没有理由
+sitemap:
+  priority: 0.9
+categories: [life]
+---
+
+<section class="featured-posts">
+  <div class="vertical-row">
+    {% for post in site.thoughts reversed %}
+      {% include page/verticalBox.html %}
+    {% endfor %}
+  </div>
+</section>
+
+{% include page/about.html %}

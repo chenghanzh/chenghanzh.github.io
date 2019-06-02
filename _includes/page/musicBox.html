@@ -1,0 +1,20 @@
+<div class="horizontal-card">
+  <div class="horizontal-card-image">
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      {% if post.image %}
+        <img src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}">
+      {% endif %}
+    </a>
+  </div>
+  <div class="card-body">
+    <div class="card-title">
+      <a class="card-title-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </div>
+    <div class="card-text">{{ post.excerpt | strip_html | truncatewords:10 }}</div>
+  </div>
+  <div class="card-footer">
+      <div class="wrapfooter">
+          <span class="post-date">{{ post.date | date_to_string }}</span>
+      </div>
+  </div>
+</div>

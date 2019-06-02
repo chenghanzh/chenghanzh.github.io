@@ -1,5 +1,5 @@
 /* =Base */
-body {
+body{
     font-family: 'Inconsolata', ;
     color: $iron;
     background-color: $dorian;
@@ -21,7 +21,6 @@ p {
 }
 
 img {
-    margin: 40px auto;
     display: block;
     max-width: 100%;
 }
@@ -175,8 +174,8 @@ strong {
 
 /* =Titles */
 .page-title {
-    margin-top:50px;
-    margin-bottom:125px;
+    margin-top:75px;
+    margin-bottom:75px;
     text-align: center;
 }
 
@@ -192,7 +191,7 @@ strong {
 }
 
 .post-title {
-    margin-bottom: 110px;
+    margin-bottom: 100px;
 }
 
 .post-title__text {

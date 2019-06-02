@@ -1,0 +1,21 @@
+---
+layout: lifePage
+title: Food
+subtitle: 生存与压力的实感
+sitemap:
+  priority: 0.9
+categories: [life]
+classification: [life-food]
+---
+
+<section class="featured-posts">
+  <div class="vertical-row">
+    {% for post in site.life reversed %}
+      {% if post.classification[0]=="life-food" %}
+        {% include page/foodBox.html %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+{% include page/about.html %}

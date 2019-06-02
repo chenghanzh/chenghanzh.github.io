@@ -1,0 +1,24 @@
+---
+layout: page
+title: Music
+subtitle: 在什么都不懂的领域收获简单而自我的快乐
+sitemap:
+  priority: 0.9
+categories: [life]
+classification: [life-music]
+---
+<ul class="list-posts">
+  {% for post in site.life reversed %}
+    {% if post.classification[0] == "life-music" %}
+      <li class="post-teaser">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          <span class="post-teaser__title">{{post.song-author}} - {{ post.song-title }}</span>
+          <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+
+{% include page/about.html %}

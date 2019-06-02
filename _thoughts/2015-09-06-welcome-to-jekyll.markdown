@@ -2,7 +2,9 @@
 layout: post
 title:  "Welcome to Jekyll!"
 subtitle: "Feel home!"
-date:   2019-05-30 23:34:01
+date:   2015-05-30 23:34:01
+image: assets/images/1.jpg
+rating: 4.5
 categories: [productivity, tool]
 classification: thoughts
 ---

@@ -20,7 +20,6 @@
     - item: cs-2019
       name: 2019
 
-
 - title: thoughts
   name: Thoughts
   url: /thoughts/thoughts.html
@@ -29,11 +28,24 @@
       name: All
     - title: thoughts-serious
       name: Serious
-      url: /thoughts/thoughts-serious.html
     - title: thoughts-random
       name: Random
-      url: /thoughts/thoughts-random.html
   years:
     - title: thoughts-2019
       name: 2019
       url: /thoughts/2019-thoughts.html
+
+- title: life
+  name: Life
+  url: /life/life.html
+  subitems:
+    - title: life-food
+      name: Food
+      url: /life/life-food.html
+    - title: life-painting
+      name: Painting
+    - title: life-music
+      name: Music
+      url: /life/life-music.html
+    - title: life-travel
+      name: Travel
