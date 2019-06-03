@@ -1,18 +1,27 @@
 ---
-layout: lifePage
+layout: lifeMainPage
 title: Life
-subtitle: 精致要付出代价，贪玩没有理由
+subtitle: 贪玩没有理由，但会玩是美德
 sitemap:
   priority: 0.9
 categories: [life]
 ---
 
-<section class="featured-posts">
-  <div class="vertical-row">
-    {% for post in site.thoughts reversed %}
-      {% include page/verticalBox.html %}
+  <ul class="list-posts">
+    {% for post in site.life reversed %}
+        <li class="post-teaser">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+              {% for level2 in site.data.navigation[2].subitems %}
+                {%if post.classification[0] == level2.title %}
+                  {% if post.classification[0] == "life-music" %}
+                    <span class="post-teaser__title">{{level2.name}}: {{ post.song-author }} - {{post.song-title}}</span>
+                  {% else %}
+                    <span class="post-teaser__title">{{level2.name}}: {{ post.title }}</span>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+              <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
+            </a>
+        </li>
     {% endfor %}
-  </div>
-</section>
-
-{% include page/about.html %}
+  </ul>

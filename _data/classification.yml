@@ -22,10 +22,14 @@
   name: Food
   category: life
 
-- slug: life-painting
-  name: Painting
+- slug: life-art
+  name: Art
   category: life
 
 - slug: life-music
   name: Music
+  category: life
+
+- slug: life-experience
+  name: Experience
   category: life

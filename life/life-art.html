@@ -5,12 +5,12 @@ subtitle: 生存与压力的实感
 sitemap:
   priority: 0.9
 categories: [life]
-classification: [life-food]
+classification: [life-art]
 ---
-<div class="featured-box">
+<div class="featured-box gridBox">
   {% for post in site.life reversed %}
     {% if post.classification[0]=="life-food" %}
-      {% include page/foodBox.html %}
+      {% include page/artBox.html %}
     {% endif %}
   {% endfor %}
 </div>

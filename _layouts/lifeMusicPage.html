@@ -9,10 +9,10 @@
 
     <body>
         {% include header.html %}
-        {% include headers/search.html %}
+        {% include headers/life-search.html %}
         <div class="wrapper">
-
-            {{ content }}
+          {% include page/title.html %}
+          {{ content }}
         </div>
         {% include externals/scripting.html %}
         {% include externals/google_analytics.html %}

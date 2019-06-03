@@ -1,0 +1,38 @@
+<div class="gridItem overlay-container">
+  <div class="card-content">
+  <div class="vertial-card-image">
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      {% if post.image %}
+        <img src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}">
+      {% endif %}
+    </a>
+  </div>
+
+  <a href="{{ site.baseurl }}{{ post.url }}">
+    <div class="overlay">
+      <div class="overlay-text">
+        <span> {{ post.title }} </span>
+        <br>
+        <br>
+        <span class="post-date">{{ post.date | date_to_string }}</span>
+      </div>
+    </div>
+  </a>
+
+  <!--<div class="card-body overlay">
+    <div class="card-title">
+      <a class="card-title-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </div>
+    <div class="card-text">{{ post.description }}</div>
+  </div>
+  <div class="rating">
+    {% include post/star_rating.html %}
+  </div>
+  <div class="card-footer">
+      <div class="wrapfooter">
+          <span class="post-date">{{ post.date | date_to_string }}</span>
+      </div>
+  </div>
+  </div>-->
+  </div>
+</div>

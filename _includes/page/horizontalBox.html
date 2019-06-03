@@ -11,13 +11,13 @@
       <a class="card-title-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </div>
     <div class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</div>
-  </div>
-  <div class="rating">
-    {% include post/star_rating.html %}
-  </div>
-  <div class="card-footer">
-      <div class="wrapfooter">
-          <span class="post-date">{{ post.date | date_to_string }}</span>
-      </div>
+    <div class="horizontal-rating">
+      {% include post/star_rating.html %}
+    </div>
+    <div class="horizontal-card-footer">
+        <div class="wrapfooter">
+            <span class="post-date">{{ post.date | date_to_string }}</span>
+        </div>
+    </div>
   </div>
 </div>

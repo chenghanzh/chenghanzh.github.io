@@ -102,3 +102,89 @@ nav ul li a {
 nav ul li a.current {
   background: black;
 }
+
+%clearfix {
+  &:before {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+  *zoom: 1;
+}
+
+$primary-color: #34495e !default;
+$white-color: #fff !default;
+$black-color: #000 !default;
+$silver-color: #eee !default;
+
+.search {
+  position: relative;
+  left: 70%;
+  width: 30%;
+
+  .input {
+    text-align: center;
+    font-weight: 400;
+    line-height: 3em;
+  }
+
+  .icon {
+    position: absolute;
+    color: rgba($primary-color, .7);
+    right: 20px;
+    top: 15px;
+  }
+
+  .no-results {
+    color: #f00;
+  }
+
+  #search-input {
+    display: inline-block;
+    width: 100%;
+    font-size: 0.8em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+.dropdown {
+  background-color: #f5f5f5;
+  box-shadow: 0px 2px 2px rgba($black-color, .2);
+  position: absolute;
+  margin-top: 1px;
+  padding: 0;
+
+  &, li, a {
+    display: block;
+    width: 100%;
+  }
+
+  li {
+    border-bottom: 1px solid $silver-color;
+    display: block;
+  }
+
+  a, .no-results {
+    font-size: 18px;
+    padding: .6em 1.2em;
+    text-decoration: none;
+    transition: background-color .2s ease, color .2s ease;
+    width: 100%;
+    color: $cloudy;
+  }
+
+  li:hover,
+  a:focus,
+  a:active {
+    background-color: $white-color;
+    // color: $white-color;
+  }
+}

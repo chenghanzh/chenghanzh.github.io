@@ -1,7 +1,6 @@
 ---
 layout: musicPost
-date:   2015-05-30 23:34:01
-image: assets/images/1.jpg
+date:   2019-06-02 12:34:01
 song-id: 1307025945
 song-author: 大笑
 song-title: Leave me alone

@@ -42,10 +42,12 @@
     - title: life-food
       name: Food
       url: /life/life-food.html
-    - title: life-painting
-      name: Painting
+    - title: life-art
+      name: Art
+      url: /life/life-art.html
     - title: life-music
       name: Music
       url: /life/life-music.html
-    - title: life-travel
-      name: Travel
+    - title: life-experience
+      name: Experience
+      url: /life/life-experience.html

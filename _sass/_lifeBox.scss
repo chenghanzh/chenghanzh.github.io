@@ -3,11 +3,11 @@ Template Name: Mediumish
 Copyright: Sal, WowThemes.net, https://www.wowthemes.net
 License: https://www.wowthemes.net/freebies-license/
 */
+
 .vertical-row{
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-  padding-top: 10px;
+  width: 100%;
+  max-width: 700px;
+  margin: 2em auto;
 }
 
 .horizontal-row{
@@ -18,8 +18,9 @@ License: https://www.wowthemes.net/freebies-license/
 }
 
 .vertical-card{
-  border: 1px solid rgba(0, 0, 0, .125);
-  border-radius: .25rem;
+  -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.3);
+  box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.3);
   font-weight: 400;
   font-size: 15.2px;
   background-color: white;
@@ -37,7 +38,8 @@ License: https://www.wowthemes.net/freebies-license/
 }
 
 .vertical-card-image {
-    max-height: 300px;
+    // max-height: 300px;
+    width: 50%;
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -83,13 +85,24 @@ License: https://www.wowthemes.net/freebies-license/
   margin-top: 1px;
 }
 
+.horizontal-rating{
+  margin-top: 15px;
+}
+
+.card-footer{
+  padding-top: 5px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.horizontal-card-footer{
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
 .wrapfooter {
     font-size: 1rem;
     display: flex;
-    align-items: center;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    margin-left: 20px;
     font-weight: 700;
 }
 
@@ -101,4 +114,55 @@ License: https://www.wowthemes.net/freebies-license/
   align-items: center;
   width: 50%;
   margin: 0 auto;
+}
+
+.featured-box{
+  position: relative;
+  overflow: hidden;
+}
+
+
+.gridItem {
+  background-color: #ffffff;
+  max-width: 30%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: $cloudy;
+}
+
+.overlay-container {
+  position: relative;
+}
+.card-content{
+}
+
+.overlay-container:hover .overlay-text {
+  opacity: 1;
+}
+
+.overlay-container:hover .overlay {
+  opacity: .7;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
