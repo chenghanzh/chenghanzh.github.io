@@ -10,16 +10,28 @@
     <body>
         {% include header.html %}
         <div class="sidebarContentWrapper">
-          <div class="sidebar sidebarPost">
-            <ul class="nav sidenav">
-              {% for iden in page.identifier  %}
-                  <li><a href="#{{iden}}">{{iden}}</a>
+          <div class="sidebar sidebarFood">
+            <ul class="nav foodSidenav">
+              <h2 class="ingredient-title"><center> Materials </center></h2>
+              {% for material in page.materials  %}
+                <div class="ingredient-container">
+                  <i class="icon icon-check"></i>
+                  <span class="ingredient-item">{{material}}</span>
+                </div>
               {% endfor %}
             </ul>
           </div>
 
-          <div class="sidebarContent sidebarContentPost">
+          <div class="sidebarContent sidebarContentFood">
             {% include post/title.html %}
+            {% if page.time %}
+              <div class="food-time">{% include post/recipe-star_time.html %}</div>
+              {% if page.difficulty==nil %} <br><br> {% endif %}
+            {% endif %}
+            {% if page.difficulty %}
+              <div class="food-time">{% include post/recipe-star_difficulty.html %}</div>
+              <br><br>
+            {% endif %}
             {{ content }}
             {% include post/about.html %}
           </div>

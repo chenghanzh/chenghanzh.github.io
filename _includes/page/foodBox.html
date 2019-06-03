@@ -14,7 +14,9 @@
       <div class="card-text">{{ post.description }}</div>
     </div>
     <div class="rating">
-      {% include post/star_rating.html %}
+      {% include post/star_time.html %}
+      {% if post.time && post.difficulty %} <br> {% endif %}
+      {% include post/star_difficulty.html %}
     </div>
     <div class="card-footer">
       <div class="wrapfooter">

@@ -1,0 +1,12 @@
+{% if page.difficulty %}
+  <span class="food-rating-text">Difficulty: </span>
+  <div class="rating-holder food-rating-holder">
+    <div class="c-rating c-rating--big" data-rating-value="{{page.difficulty}}">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+    </div>
+  </div>
+{% endif %}

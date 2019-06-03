@@ -1,0 +1,27 @@
+---
+layout: csMainPage
+title: Cheat Sheet
+subtitle: Moving memory
+sitemap:
+  priority: 0.9
+categories: [cs]
+---
+<ul class="list-posts">
+  {% for post in site.posts %}
+    {% if post.classification[0]=="cs-cheatsheet" %}
+      <li class="post-teaser">
+        {% if post.link-url %}
+          <a href="{{ post.link-url }}">
+            <span class="post-teaser__title">{{ post.title }}</span>
+            <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
+          </a>
+        {% else %}
+          <a href="{{ post.url | prepend: site.baseurl}}">
+            <span class="post-teaser__title">{{ post.title }}</span>
+            <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
+          </a>
+        {% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

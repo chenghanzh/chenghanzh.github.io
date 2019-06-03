@@ -16,6 +16,9 @@
         - title: cs-ml-cs229
           name: Stanford cs229 Maching Learning
           url: /cs/ml/cs-ml-cs229.html
+    - title: cs-cheatsheet
+      name: Cheat Sheet
+      url: /cs/cheatsheet/cs-cheatsheet.html
   years:
     - item: cs-2019
       name: 2019

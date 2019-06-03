@@ -6,6 +6,10 @@
   name: Machine Learning
   category: cs
 
+- slug: cs-cheatsheet
+  name: Cheat Sheet
+  category: cs
+
 - slug: thoughts-all
   name: All
   category: thoughts
