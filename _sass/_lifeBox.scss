@@ -50,6 +50,11 @@ License: https://www.wowthemes.net/freebies-license/
     box-sizing: border-box;
 }
 
+.horizontal-card .center{
+    display: flex;
+    align-items: center;
+}
+
 .card-title{
   font-weight: 700;
   margin-top: 5px;
