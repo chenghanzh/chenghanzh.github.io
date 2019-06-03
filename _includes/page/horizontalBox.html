@@ -1,5 +1,5 @@
 <div class="horizontal-card">
-  <div class="card-image">
+  <div class="horizontal-card-image">
     <a href="{{ site.baseurl }}{{ post.url }}">
       {% if post.image %}
         <img src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}">
@@ -8,9 +8,9 @@
   </div>
   <div class="card-body">
     <div class="card-title">
-      <a class="card-title-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <a class="card-title-link" href="{{ site.baseurl }}{{ post.url }}"><center>{{ post.title }}</center></a>
     </div>
-    <div class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</div>
+    <div class="card-text">{{ post.description }}</div>
     <div class="horizontal-rating">
       {% include post/star_rating.html %}
     </div>

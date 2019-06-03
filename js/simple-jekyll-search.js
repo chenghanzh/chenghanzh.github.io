@@ -256,8 +256,16 @@ function __setOptions_7 (_options) {
 }
 
 function compile (data) {
-  if (data['classification']=='life-music')
-    options.template='<li><a href="{url}?query={query}" title="{desc}">'+data["song-author"] + ' - '+ data["song-title"]+'</a></li>';
+  if (data['classification']=='life-music'){
+    var tempTemplate='<li><a href="{url}?query={query}" title="{desc}">'+data["song-author"] + ' - '+ data["song-title"]+'</a></li>';
+    return tempTemplate.replace(options.pattern, function (match, prop) {
+      var value = options.middleware(prop, data[prop], options.template)
+      if (typeof value !== 'undefined') {
+        return value
+      }
+      return data[prop] || match
+    })
+  }
   return options.template.replace(options.pattern, function (match, prop) {
     var value = options.middleware(prop, data[prop], options.template)
     if (typeof value !== 'undefined') {
