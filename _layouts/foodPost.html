@@ -11,15 +11,17 @@
         {% include header.html %}
         <div class="sidebarContentWrapper">
           <div class="sidebar sidebarFood">
-            <ul class="nav foodSidenav">
-              <h2 class="ingredient-title"><center> Materials </center></h2>
-              {% for material in page.materials  %}
-                <div class="ingredient-container">
-                  <i class="icon icon-check"></i>
-                  <span class="ingredient-item">{{material}}</span>
-                </div>
-              {% endfor %}
-            </ul>
+            {%if page.materials %}
+              <ul class="nav foodSidenav">
+                <h2 class="ingredient-title"><center> Materials </center></h2>
+                {% for material in page.materials  %}
+                  <div class="ingredient-container">
+                    <i class="icon icon-check"></i>
+                    <span class="ingredient-item">{{material}}</span>
+                  </div>
+                  {% endfor %}
+                </ul>
+              {% endif %}
           </div>
 
           <div class="sidebarContent sidebarContentFood">
