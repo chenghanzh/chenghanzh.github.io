@@ -5,25 +5,24 @@ subtitle: 伤方知愈
 sitemap:
   priority: 0.9
 categories: [thoughts]
-classification: [thoughts-all]
+classification: [thoughts-serious]
 ---
-
 <div class="sidebarContentWrapper">
   <div class="sidebar sidebarThoughts">
     <ul class="nav sidenav">
+      {% assign this_year = nil %}
+      {% assign next_year = nil %}
       {% for thought in site.thoughts reversed %}
-
+        {% if thought.classification[0]=="thoughts-serious" %}
+          {% assign next_year = this_year %}
           {% capture this_year %}{{ thought.date | date: "%Y" }}{% endcapture %}
-          {% capture next_year %}{{ thought.previous.date | date: "%Y" }}{% endcapture %}
-          {% if forloop.first %}
-            <li><a href="/thoughts/{{this_year}}-thoughts">{{this_year}}</a></li>
+          {% if next_year==nil %}
+            <li><a href="/thoughts/{{this_year}}-thoughts-serious">{{this_year}}</a></li>
           {% endif %}
-          {% if forloop.last %}
-          {% else %}
-            {% if this_year != next_year %}
-              <li><a href="/thoughs/{{next_year}}-thoughts">{{next_year}}</a></li>
-            {% endif %}
+          {% if this_year != next_year %}
+            <li><a href="/thoughs/{{next_year}}-thoughts-serious">{{next_year}}</a></li>
           {% endif %}
+        {% endif %}
       {% endfor %}
     </ul>
   </div>
@@ -32,17 +31,16 @@ classification: [thoughts-all]
     {% include sidebarPage/title.html %}
     <ul class="list-posts">
         {% for thought in site.thoughts reversed %}
-          {% capture this_year %}{{ thought.date | date: "%Y" }}{% endcapture %}
-          {% if this_year == "2019" %}
+          {% if thought.classification[0]=="thoughts-serious" %}
             <article class="module">
               <h2>
                 <time>{{ thought.date| date: "%m/%d/%Y" }}</time>
               </h2>
               <p>
-              {{ thought.content }}
+                {{ thought.content }}
               </p>
             </article>
-          {%endif %}
+          {% endif %}
         {% endfor %}
     </ul>
   </div>

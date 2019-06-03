@@ -5,9 +5,10 @@ License: https://www.wowthemes.net/freebies-license/
 */
 
 .vertical-row{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
   width: 100%;
-  max-width: 700px;
-  margin: 2em auto;
+  grid-gap: 30px;
 }
 
 .horizontal-row{
@@ -141,6 +142,15 @@ License: https://www.wowthemes.net/freebies-license/
   max-width: 30%;
 }
 
+.grid2Item {
+  background-color: #ffffff;
+  max-width: 45%;
+}
+
+.grid2-wrapper{
+  margin: 5%;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -158,6 +168,8 @@ License: https://www.wowthemes.net/freebies-license/
   position: relative;
 }
 .card-content{
+  width: 100%;
+  height: 100%;
 }
 
 .overlay-container:hover .overlay-text {
@@ -305,6 +317,46 @@ a.next::before {
 	}
 
 	.component-small nav a.next {
+		margin-left: 20px;
+		right: auto;
+		left: 50%;
+	}
+}
+
+.component-large {
+	width: 800px;
+	height: 550px;
+}
+
+
+.component-large > ul {
+	width: 600px;
+  height: 550px;
+  overflow: hidden;
+}
+
+.component-large nav a.prev {
+	left: 0px;
+}
+
+.component-large nav a.next {
+	right: 0px;
+}
+
+@media screen and (max-width: 35.5em) {
+	.component-large nav a {
+		top: 100%;
+		margin-top: 10px;
+		-webkit-transform: translateY(0%);
+		transform: translateY(0%);
+	}
+
+	.component-large nav a.prev {
+		left: 50%;
+		margin-left: -80px;
+	}
+
+	.component-large nav a.next {
 		margin-left: 20px;
 		right: auto;
 		left: 50%;

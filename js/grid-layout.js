@@ -23,10 +23,10 @@ function resizeAllGridItems(){
   }
   box = document.getElementsByClassName("featured-box");
   if(box[0]!=null){
-    if(topPx0>topPx1 && topPx0>topPx2){
+    if(topPx0>=topPx1 && topPx0>=topPx2){
       box[0].style.height = topPx0+'px';
     }
-    else if (topPx1>topPx0 && topPx1>topPx2){
+    else if (topPx1>=topPx0 && topPx1>=topPx2){
       box[0].style.height = topPx1+'px';
     }
     else{

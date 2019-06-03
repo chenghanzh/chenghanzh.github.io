@@ -9,9 +9,16 @@
 
     <body>
         {% include header.html %}
+        <div class="wrapper">
 
-        {{content}}
+            {% include post/title.html %}
+            {{ content }}
+            {% include post/about.html %}
+
+        </div>
+
         {% include externals/scripting.html %}
+        <script type="text/javascript" src='/js/imageSlider.js'></script>
         {% include externals/google_analytics.html %}
     </body>
 </html>

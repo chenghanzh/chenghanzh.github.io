@@ -9,9 +9,14 @@
 
     <body>
         {% include header.html %}
+        {% include headers/life-search.html %}
+        <div class="sidebarContent sidebarContentLife">
+          {% include page/title.html %}
+          {{ content }}
+        </div>
 
-        {{content}}
         {% include externals/scripting.html %}
+        <script type="text/javascript" src='/js/grid2-layout.js'></script>
         {% include externals/google_analytics.html %}
     </body>
 </html>

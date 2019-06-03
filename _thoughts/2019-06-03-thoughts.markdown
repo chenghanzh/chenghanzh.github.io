@@ -1,0 +1,8 @@
+---
+layout: post
+categories: [thoughts]
+classification: [thoughts-random]
+---
+今天和谷歌那个interview coach聊天的时候他说：50% coding, 30% meeting, 20% helping with others. You'll notice that coding is the easiest part. It is much easier than dealing with people.
+
+这老哥看起来挺和蔼可亲的所以他是忍受了多少智障啊。

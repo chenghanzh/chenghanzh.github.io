@@ -1,18 +1,20 @@
 ---
-layout: lifePage
-title: Food
-subtitle: 生存与压力的实感
+layout: artPage
+title: Art
+subtitle: 有关自由的立身之本
 sitemap:
   priority: 0.9
 categories: [life]
 classification: [life-art]
 ---
+<div class="grid2-wrapper">
 <div class="featured-box gridBox">
   {% for post in site.life reversed %}
-    {% if post.classification[0]=="life-food" %}
+    {% if post.classification[0]=="life-art" %}
       {% include page/artBox.html %}
     {% endif %}
   {% endfor %}
+</div>
 </div>
 
 {% include page/about.html %}

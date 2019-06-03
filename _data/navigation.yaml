@@ -29,10 +29,13 @@
   subitems:
     - title: thoughts-all
       name: All
+      url: /thoughts/thoughts.html
     - title: thoughts-serious
       name: Serious
+      url: /thoughts/thoughts-serious.html
     - title: thoughts-random
       name: Random
+      url: /thoughts/thoughts-random.html
   years:
     - title: thoughts-2019
       name: 2019
