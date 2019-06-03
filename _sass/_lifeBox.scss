@@ -175,3 +175,248 @@ License: https://www.wowthemes.net/freebies-license/
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+.component {
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 40px;
+  margin-top: 20px;
+	max-width: 100%;
+}
+
+.component-small {
+	width: 650px;
+	height: 550px;
+}
+
+.component > ul {
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	position: relative;
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.component-small > ul {
+	width: 450px;
+  height: 550px;
+  overflow: hidden;
+}
+
+.component li {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	opacity: 0;
+	z-index: 999;
+}
+
+.component .center{
+  align-items: center;
+  display: flex;
+}
+
+.component .current {
+	opacity: 1;
+	pointer-events: auto;
+	z-index: 1000;
+}
+
+.component li img {
+	display: block;
+	max-width: 100%;
+}
+
+.component nav a {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	color: #5b4c5c;
+	outline: none;
+	overflow: hidden;
+	text-align: center;
+	line-height: 200px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.component-small nav a.prev {
+	left: 0px;
+}
+
+.component-small nav a.next {
+	right: 0px;
+}
+
+.component nav a::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	line-height: 60px;
+	height: 100%;
+	font-family: 'fontawesome';
+	font-size: 60px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	opacity: 0.5;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.component nav a:hover::before {
+	opacity: 1;
+}
+
+a.prev::before {
+	content: "\f053";
+}
+
+a.next::before {
+	content: "\f054";
+}
+
+@media screen and (max-width: 35.5em) {
+	.component-small nav a {
+		top: 100%;
+		margin-top: 10px;
+		-webkit-transform: translateY(0%);
+		transform: translateY(0%);
+	}
+
+	.component-small nav a.prev {
+		left: 50%;
+		margin-left: -80px;
+	}
+
+	.component-small nav a.next {
+		margin-left: 20px;
+		right: auto;
+		left: 50%;
+	}
+}
+
+.photoBrowse .itemwrap {
+	-webkit-perspective: 1300px;
+	perspective: 1300px;
+}
+
+.photoBrowse .navOutNext {
+	-webkit-animation: moveBehind 0.5s forwards;
+	animation: moveBehind 0.5s forwards;
+}
+
+.photoBrowse .navInNext {
+	opacity: 1;
+	-webkit-animation: appear 0.5s forwards;
+	animation: appear 0.5s forwards;
+}
+
+.photoBrowse .navOutPrev {
+	-webkit-animation: disappear 0.5s forwards;
+	animation: disappear 0.5s forwards;
+}
+
+.photoBrowse .navInPrev {
+	opacity: 1;
+	-webkit-animation: moveFront 0.5s forwards;
+	animation: moveFront 0.5s forwards;
+}
+
+.photoBrowse li::before,
+.photoBrowse li::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	background-color: rgba(0,0,0,0.6);
+	transition: opacity 0.5s;
+}
+
+.photoBrowse li::after,
+.photoBrowse .navOutNext::before,
+.photoBrowse .navOutPrev::before {
+	opacity: 0;
+}
+
+.photoBrowse .navOutNext::before,
+.photoBrowse .navOutPrev::before {
+	-webkit-transition-speed: 0.25s;
+	transition-speed: 0.25s;
+	transition-delay: 0.2s;
+}
+
+.photoBrowse li::before,
+.photoBrowse li.current::after,
+.photoBrowse .navInNext::after,
+.photoBrowse .navInPrev::after {
+	opacity: 0;
+}
+
+
+@-webkit-keyframes moveBehind {
+	from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	50% { z-index: 9999; -webkit-transform: translateX(-105%) rotateY(35deg) rotateX(10deg); }
+	100% { -webkit-transform: translateX(0%) rotateY(0deg) rotateX(0deg); }
+}
+
+@keyframes moveBehind {
+	from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	50% { z-index: 9999; -webkit-transform: translateX(-105%) rotateY(35deg) rotateX(10deg); transform: translateX(-105%) rotateY(35deg) rotateX(10deg); }
+	100% { -webkit-transform: translateX(0%) rotateY(0deg) rotateX(0deg); transform: translateX(0%) rotateY(0deg) rotateX(0deg); }
+}
+
+@-webkit-keyframes appear {
+	0% { -webkit-transform: translateZ(-200px); }
+	51% { z-index: 9999; }
+	70% { z-index: 9999; -webkit-transform: translateZ(50px); }
+	100% { z-index: 9999; -webkit-transform: translateZ(0px); }
+}
+
+@keyframes appear {
+	0% { -webkit-transform: translateZ(-200px); transform: translateZ(-200px); }
+	51% { z-index: 9999; }
+	70% { z-index: 9999; -webkit-transform: translateZ(50px); transform: translateZ(50px); }
+	100% { z-index: 9999; -webkit-transform: translateZ(0px); transform: translateZ(0px); }
+}
+
+@-webkit-keyframes disappear {
+	from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	30% {-webkit-transform: translateZ(50px); }
+	50% { z-index: 9999; }
+	100% { -webkit-transform: translateZ(-200px); }
+}
+
+@keyframes disappear {
+	from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	30% {-webkit-transform: translateZ(50px);transform: translateZ(50px); }
+	50% { z-index: 9999; }
+	100% { -webkit-transform: translateZ(-200px); transform: translateZ(-200px); }
+}
+
+@-webkit-keyframes moveFront {
+	from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	50% { -webkit-transform: translateX(-105%) rotateY(35deg) rotateX(10deg); }
+	51% { z-index: 9999; }
+	100% { z-index: 9999; -webkit-transform: translateX(0%) rotateY(0deg) rotateX(0deg); }
+}
+
+@keyframes moveFront {
+	from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	50% { -webkit-transform: translateX(-105%) rotateY(35deg) rotateX(10deg); transform: translateX(-105%) rotateY(35deg) rotateX(10deg); }
+	51% { z-index: 9999; }
+	100% { z-index: 9999; -webkit-transform: translateX(0%) rotateY(0deg) rotateX(0deg); transform: translateX(0%) rotateY(0deg) rotateX(0deg); }
+}
