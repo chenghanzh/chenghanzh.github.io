@@ -9,7 +9,11 @@ categories: [cs]
 <ul class="list-posts">
   {% for post in site.posts %}
     <li class="post-teaser">
-      <a href="{{ post.url | prepend: site.baseurl }}">
+        {% if post.link-url %}
+          <a href="{{ post.link-url }}">
+        {% else %}
+          <a href="{{ post.url | prepend: site.baseurl}}">
+        {% endif %}
         <span class="post-teaser__title">{{ post.title }}</span>
         <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
       </a>
