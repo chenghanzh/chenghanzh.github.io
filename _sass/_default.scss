@@ -14,6 +14,11 @@ a {
     }
 }
 
+ul{
+  font-size: 20px;
+  line-height: 32px;
+}
+
 p {
     font-size: 20px;
     line-height: 32px;
@@ -187,6 +192,7 @@ strong {
 .page-title__text {
     font-weight: 700;
     font-size: 70px;
+    margin-bottom: 15px;
 }
 
 .page-title__subtitle {
@@ -201,6 +207,7 @@ strong {
 
 .post-title__text {
     font-size: 40px;
+    margin-bottom: 10px;
 }
 
 .post-title__subtitle {
@@ -222,6 +229,11 @@ strong {
 .post-teaser__title {
     font-size: 22px;
     color: $iron;
+}
+
+.post-teaser__subtitle {
+    font-size: 18px;
+    color: $cloudy;
 }
 
 .post-teaser__date {

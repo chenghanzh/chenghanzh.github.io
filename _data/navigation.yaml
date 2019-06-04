@@ -19,6 +19,9 @@
     - title: cs-cheatsheet
       name: Cheat Sheet
       url: /cs/cheatsheet/cs-cheatsheet.html
+    - title: cs-miscellany
+      name: Miscellany
+      url: /cs/miscellany/cs-miscellany.html
   years:
     - item: cs-2019
       name: 2019

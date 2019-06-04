@@ -2,6 +2,7 @@
 $icon-search: "\f002";
 $icon-check-square: "\f14a";
 $icon-check: "\f00c";
+$icon-link: "\f0c1";
 
 .icon {
   font-family: 'FontAwesome';
@@ -17,3 +18,4 @@ $icon-check: "\f00c";
 
 .icon-search:before { content: $icon-search; }
 .icon-check:before { content: $icon-check; }
+.icon-link:before { content: $icon-link; }

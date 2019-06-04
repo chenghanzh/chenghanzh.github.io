@@ -13,7 +13,7 @@
           <div class="sidebar sidebarPost">
             <ul class="nav sidenav">
               {% for iden in page.identifier  %}
-                  <li><a href="#{{iden}}">{{iden}}</a>
+                  <li><a href="#{{iden}}">{{iden|replace: '_', ' '}}</a>
               {% endfor %}
             </ul>
           </div>

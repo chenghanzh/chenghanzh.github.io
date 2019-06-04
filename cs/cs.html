@@ -10,6 +10,7 @@ categories: [cs]
   {% for post in site.posts %}
     <li class="post-teaser">
         {% if post.link-url %}
+          <i class="icon icon-link"></i>
           <a href="{{ post.link-url }}">
         {% else %}
           <a href="{{ post.url | prepend: site.baseurl}}">
