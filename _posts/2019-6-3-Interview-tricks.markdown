@@ -29,7 +29,7 @@ identifier:
   - 没什么好说的，写就是了。
   - 大概10到20分钟。
 - Step 3: Dry run/prove that this works
-  - 可以用step0里举出的例子向面试官展示你的码可行。可以用comment把一些变量的值写在后面。
+  - 可以用step 0里举出的例子向面试官展示你的码可行。可以用comment把一些变量的值写在后面。
   - 大概2到5分钟。
 - Step 4: Edge cases, unit tests
   - 我觉得写完之后再处理edge case很符合我的写码习惯，毕竟在implement的时候很难兼顾那么多。不过我的coach提到如果在写的时候想到corner case但不想思路被打断的话可以写一个``` //TODO: fix...```，等到这个步骤的时候再进行完善。
