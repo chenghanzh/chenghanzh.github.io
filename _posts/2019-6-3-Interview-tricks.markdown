@@ -1,6 +1,6 @@
 ---
 layout: csPost
-title:  "Interview Tricks"
+title:  "CodeU Interview Tricks"
 subtitle: "不愧是大公司，如此系统的面试培训方便跳槽吗"
 categories: [cs]
 classification: [cs-miscellany]
