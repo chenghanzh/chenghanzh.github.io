@@ -477,3 +477,19 @@ a.next::before {
 	51% { z-index: 9999; }
 	100% { z-index: 9999; -webkit-transform: translateX(0%) rotateY(0deg) rotateX(0deg); transform: translateX(0%) rotateY(0deg) rotateX(0deg); }
 }
+
+.mapouter{
+  padding-top:10%;
+  margin:auto;
+  position:relative;
+  text-align:right;
+  height:400px;
+  width:700px;
+}
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:400px;
+  width:700px;
+}
