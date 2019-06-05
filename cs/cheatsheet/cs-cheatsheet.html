@@ -11,8 +11,8 @@ classification: [cs-cheatsheet]
   {% for post in site.posts %}
     {% if post.classification[0]=="cs-cheatsheet" %}
       <li class="post-teaser">
-        {% if post.link-url %}
-          <a href="{{ post.link-url }}">
+        {% if post.link %}
+          <a href="{{ post.link }}">
             <i class="icon icon-link"></i>
             <span class="post-teaser__title">{{ post.title }}</span>
             <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>

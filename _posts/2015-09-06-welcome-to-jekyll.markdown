@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: csPost
 title:  "Welcome to Jekyll!"
 subtitle: "Feel home!"
 date:   2018-09-06 23:34:01

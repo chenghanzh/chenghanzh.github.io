@@ -9,9 +9,9 @@ categories: [cs]
 <ul class="list-posts">
   {% for post in site.posts %}
     <li class="post-teaser">
-        {% if post.link-url %}
+        {% if post.link %}
           <i class="icon icon-link"></i>
-          <a href="{{ post.link-url }}">
+          <a href="{{ post.link }}">
         {% else %}
           <a href="{{ post.url | prepend: site.baseurl}}">
         {% endif %}
