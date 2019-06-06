@@ -54,4 +54,19 @@ where $\theta_D(x):= \min_x \mathcal{L}(x, \lambda, \nu)$. Dual problems can oft
   d^* \leq p^*
 \end{equation}
 
-<h2 id="Strong_duality">Strong duality<h2>
+<h2 id="Strong_duality">Strong duality</h2>
+**Strong duality**: $ d^* = p^* $.
+
+Conditions which guarantee strong duality for convex optimization problems are known as **constraint qualifications**. The most commonly invoked constraint qualification is **Slater's condition**:
+
+**Theorem 2.2** *Consider a convex optimization problem whose corresponding primal and dual problems are given by $P'$ and $D'$ . If there exists a primal feasible $x$ for which each inequality constraint is strictly satisfied (i.e., $g_i(x)<0$), then* $ p^* = d^* $.  
+
+<h2 id="KKT_conditions">The KKT conditions</h2>
+For constraint convex programming, the **Karush-Kuhn-Tucker (KKT) necessary and sufficient conditions** characterize the optima of primal/dual problems.
+
+**Theorem 2.3** If $\tilde{x}$ is primal feasible and $(\tilde{\lambda}, \tilde{\nu})$ are dual feasible, and if
+$$ \begin{align}
+  \nabla_x \mathcal{L}(\tilde{x}, \tilde{\lambda}, \tilde{\nu}) &= \mathbf{0} \tag{KKT1} \\
+  \tilde{\lambda}_i g_i(\tilde{x}) &= 0, i=1, ..., m, \tag{KKT2}
+\end{align} $$
+then $\tilde{x}$ is primal optimal, $(\tilde{\lambda}, \tilde{\nu})$ are dual optimal, and strong duality holds.
