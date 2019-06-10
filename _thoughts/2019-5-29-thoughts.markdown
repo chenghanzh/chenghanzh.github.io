@@ -1,8 +1,5 @@
 ---
 layout: post
-title:  “”
-subtitle: "Feel home!"
-date:   2019-05-29 23:34:01
 categories: [thoughts]
 classification: [thoughts-serious]
 ---
