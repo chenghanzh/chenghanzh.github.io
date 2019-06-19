@@ -1,0 +1,20 @@
+---
+layout: csPost
+title:  "Tools"
+subtitle: "Maybe useful"
+categories: [cs]
+classification: [cs-miscellany]
+identifier:
+  - Web_Development
+---
+
+<h2 id="Web_Development"> Web Development </h2>
+CodePen (Tools) display website based on html, css and javascript
+<a href="https://codepen.io/"><i class="icon icon-link"></i></a>
+
+
+<h2 id="Machine_Learning"> Machine Learning </h2>
+Codelabs google api including Tensorflow (colab) and other things
+<a href="https://codelabs.developers.google.com/"><i class="icon icon-link"></i></a>
+
+webpaige@google.com

@@ -10,6 +10,14 @@
   name: Cheat Sheet
   category: cs
 
+- slug: cs-miscellany
+  name: Miscellany
+  category: cs
+
+- slug: cs-history
+  name: History
+  category: cs
+
 - slug: thoughts-all
   name: All
   category: thoughts

@@ -1,0 +1,29 @@
+---
+layout: csNoSidePage
+title: History
+subtitle: And it all starts with a big bang
+sitemap:
+  priority: 0.9
+categories: [cs]
+classification: [cs-history]
+---
+<ul class="list-posts">
+  {% for post in site.posts %}
+    {% if post.classification[0]=="cs-history" %}
+      <li class="post-teaser">
+        {% if post.link %}
+          <a href="{{ post.link }}">
+            <i class="icon icon-link"></i>
+            <span class="post-teaser__title">{{ post.title }}</span>
+            <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
+          </a>
+        {% else %}
+          <a href="{{ post.url | prepend: site.baseurl}}">
+            <span class="post-teaser__title">{{ post.title }}</span>
+            <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
+          </a>
+        {% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

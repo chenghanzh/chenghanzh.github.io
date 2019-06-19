@@ -1,0 +1,31 @@
+---
+layout: csPost
+title:  "Ideas from talking"
+categories: [cs]
+classification: [cs-miscellany]
+identifier:
+  -
+---
+
+<h2 id="">  </h2>
+
+&#160; &#160; 作为一个技术出身的公司高层，工作的日常是在已有技术的基础上，和其他公司形成合作的关系。技术和掌握的信息是谈判的基础。
+
+<br>
+
+<h2 id="Five_steps"> 工业 </h2>
+
+&#160; &#160; 技术不是什么问题。尤其是在大公司里，总有能解决问题的人。在一个项目中，更重要的是你可以在项目中加入什么feature，
+
+<br>
+
+<h2 id="Hint"> 算法 </h2>
+&#160; &#160; 算法是一切的基础。什么可以被计算机实现，什么不可以被实现。在large scale的情况下，怎么快速地实现目标。就算有想法也要知道它能不能实现。
+
+<br>
+
+<h2 id="Optimization"> Explore more and your interest will find you </h2>
+&#160; &#160; That's it. Don't be nervous. Life is long and it matters more what kind of person you are.
+
+<h2 id="Optimization"> 历史 </h2>
+&#160; &#160; 目前的计算机行业很杂很乱，东西很多，新鲜的东西层出不穷。但是如果能从历史的角度去看，火热的浪潮就会变得明了。所以不用像个年轻人一样。沉淀下心，清楚自己要做什么。活力有的时候必然会带来浮躁。

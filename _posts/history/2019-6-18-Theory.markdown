@@ -1,0 +1,27 @@
+---
+layout: csPost
+title:  "Theory"
+categories: [cs]
+classification: [cs-history]
+reference: https://history-computer.com/ModernComputer/thinkers/thinkers.html
+identifier:
+  -
+---
+
+<h2 id="Introduction"> Introduction </h2>
+
+&#160; &#160; Modern computers: can carry out billions of arithmetical operations at lightning-fast speed.
+
+&#160; &#160; Computers are powerful because they are able to carry out long and complex sequences of logical as well as arithmetical operations and modify these sequences according to the information presented to them without any direct intervention, i.e. they can make logical decisions.
+
+&#160; &#160; After WWII, it becomes apparent that general-purpose stored-program computer could achieve the same results as any of the special-purpose logic machines.
+
+<br>
+
+<h2 id=""> Von Neumann </h2>
+&#160; &#160; The use of memory in digital computers to store both sequences of instructions and data was a breakthrough to which von Neumann made major contributions.
+
+&#160; &#160; [First Draft of a Report on the EDVAC][First-Draft-of-a-Report-on-the-EDVAC] laid foundations of a computer architecture in which the data and the program are both stored in the computer's memory in the same address space, which will be described later as *von Neumann Architecture*. This architecture became the de facto standard for a long time and is still used today until technology enabled more advanced architectures.
+
+
+[First-Draft-of-a-Report-on-the-EDVAC]: https://history-computer.com/Library/edvac.pdf

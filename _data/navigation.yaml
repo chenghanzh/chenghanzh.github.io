@@ -22,6 +22,9 @@
     - title: cs-miscellany
       name: Miscellany
       url: /cs/miscellany/cs-miscellany.html
+    - title: cs-history
+      name: History
+      url: /cs/history/cs-history.html
   years:
     - item: cs-2019
       name: 2019
