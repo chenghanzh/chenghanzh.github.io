@@ -23,5 +23,21 @@ identifier:
 
 &#160; &#160; [First Draft of a Report on the EDVAC][First-Draft-of-a-Report-on-the-EDVAC] laid foundations of a computer architecture in which the data and the program are both stored in the computer's memory in the same address space, which will be described later as *von Neumann Architecture*. This architecture became the de facto standard for a long time and is still used today until technology enabled more advanced architectures.
 
+1.0 Definitions
+
+&#160; &#160; Computer: a very high speed automatic digital computing system, and in particular with its logical control.
+
+&#160; &#160; An *automatic computing system* is a device which can carry out instructions to perform calculations of a considerable order of complexity. The instructions which govern this operation must be given to the device in absolutely exhaustive detail， which include all numerical information which is required to solve the problem (initial and boundary values of the dependent variables, values of fixed parameters, tables of fixed functions which occur in the statement of the problem) and are given in some form which the device can sense. All these procedures require the use of some code to express the logical and the algebraical definition of the problem under consideration, as well as the necessary numerical material. Once these instructions are given to the device, it must be able to carry them out completely and without any need for further intelligent human intervention. At the end of the required operations the device must record the results again in one of the forms referred to above.
+
+&#160; &#160; The device will in general produce essentially more numerical material than the final results mentioned.
+
+&#160; &#160; The whole process on the desired automatic functioning of the device must assume that if functions faultlessly, which may not be possible for a complicated device and a long sequence of operations. For the recognition and correction of such malfunctions intelligent human intervention will in general be necessary. It may be possible to avoid even this phenomena to some extent.
+
+2.0 Main Subdivisions of the System
+
+&#160; &#160; A *central arithmetical* part (CA): Since the device is primarily a computer, it will have to perform the elementary operations of arithmetics most frequently (+, -, *, /).
+
+&#160; &#160; The proper sequencing of its operations 
+
 
 [First-Draft-of-a-Report-on-the-EDVAC]: https://history-computer.com/Library/edvac.pdf
